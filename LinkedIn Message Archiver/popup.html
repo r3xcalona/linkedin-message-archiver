@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LinkedIn Message Archiver popup interface">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title data-i18n="extensionName">LinkedIn Message Archiver</title>
+  
+  <link rel="stylesheet" href="assets/styles/popup.css">
+  <link rel="stylesheet" href="assets/styles/themes/light.css" id="theme-stylesheet">
+</head>
+<body>
+  <div class="container" role="main">
+    <header class="header">
+      <h1 class="title" id="title" data-i18n="extensionName">LinkedIn Message Archiver</h1>
+    </header>
+
+    <section class="settings" aria-labelledby="settings-heading">
+      <h2 id="settings-heading" class="visually-hidden" data-i18n="settingsButton">Settings</h2>
+      <div class="settings-item">
+        <label for="languageSelect" id="languageLabel" data-i18n="language">Language:</label>
+        <select id="languageSelect" 
+                class="language-select" 
+                aria-labelledby="languageLabel"
+                aria-describedby="language-description">
+          <option value="es">Español</option>
+          <option value="en">English</option>
+        </select>
+        <span id="language-description" class="visually-hidden">Select your preferred language</span>
+      </div>
+    </section>
+
+    <main class="main-content">
+      <button id="startArchive" 
+              class="btn btn-primary" 
+              data-i18n="startButton"
+              aria-live="polite">
+        Archivar Todos los Mensajes
+      </button>
+      
+      <div id="controls" class="controls" aria-live="polite">
+        <div class="progress" role="status">
+          <div class="counter">
+            <span id="selectedCount" aria-label="Selected messages count">0</span>
+            <span id="messagesText" data-i18n="messagesCount">mensajes</span>
+          </div>
+          <div class="control-buttons">
+            <button id="pauseButton" 
+                    class="btn btn-warning" 
+                    data-i18n="pauseButton"
+                    aria-live="polite">
+              Pausar
+            </button>
+            <button id="stopButton" 
+                    class="btn btn-danger" 
+                    data-i18n="stopButton"
+                    aria-live="polite">
+              Detener
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="status" 
+           class="status" 
+           role="alert" 
+           aria-live="polite"></div>
+    </main>
+  </div>
+
+  <script src="libs/i18n.js" defer></script>
+  <script src="popup.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+{
+    "extensionName": {
+      "message": "LinkedIn Message Archiver",
+      "description": "The name of the extension"
+    },
+    "extensionShortName": {
+      "message": "LI Archiver",
+      "description": "Short name of the extension"
+    },
+    "appDescription": {
+      "message": "Archive LinkedIn messages automatically with ease",
+      "description": "The description of the extension"
+    },
+    "browserActionTitle": {
+      "message": "LinkedIn Message Archiver",
+      "description": "The title of the browser action button"
+    },
+    "commandOpenPopup": {
+      "message": "Open Message Archiver",
+      "description": "Description of the keyboard shortcut to open the popup"
+    },
+    "startButton": {
+      "message": "Archive All Messages"
+    },
+    "settingsButton": {
+      "message": "Settings"
+    },
+    "pauseButton": {
+      "message": "Pause"
+    },
+    "resumeButton": {
+      "message": "Resume"
+    },
+    "stopButton": {
+      "message": "Stop"
+    },
+    "messagesCount": {
+      "message": "messages"
+    },
+    "notifications": {
+      "message": "Show notifications"
+    },
+    "messageDelay": {
+      "message": "Delay between messages (ms):"
+    },
+    "language": {
+      "message": "Language:"
+    },
+    "errorLinkedIn": {
+      "message": "Please navigate to LinkedIn messages page first"
+    },
+    "noMessages": {
+      "message": "No messages found to archive"
+    },
+    "processingStopped": {
+      "message": "Process stopped by user"
+    },
+    "archiveSuccess": {
+      "message": "$COUNT$ messages archived successfully!",
+      "placeholders": {
+        "count": {
+          "content": "$1",
+          "example": "42"
+        }
+      }
+    },
+    "searchingArchiveButton": {
+      "message": "Looking for archive button..."
+    },
+    "loadingMessages": {
+      "message": "Loading all messages..."
+    },
+    "scrollCompleted": {
+      "message": "Scroll completed"
+    },
+    "startingSelection": {
+      "message": "Starting message selection... (Attempt $ATTEMPT$)",
+      "placeholders": {
+        "attempt": {
+          "content": "$1",
+          "example": "1"
+        }
+      }
+    },
+    "messageSelected": {
+      "message": "Message $COUNT$ selected",
+      "placeholders": {
+        "count": {
+          "content": "$1",
+          "example": "1"
+        }
+      }
+    },
+    "warningIncomplete": {
+      "message": " (Warning: Not all messages could be selected)"
+    },
+    "archiveButtonFound": {
+      "message": "Archive button found, proceeding to archive..."
+    },
+    "retryingSelection": {
+      "message": "$COUNT$ messages left unselected. Retrying...",
+      "placeholders": {
+        "count": {
+          "content": "$1",
+          "example": "5"
+        }
+      }
+    },
+    "logInstallSuccess": {
+      "message": "LinkedIn Message Archiver: Extension installed successfully"
+    },
+    "logUpdateSuccess": {
+      "message": "LinkedIn Message Archiver: Updated from version $VERSION$",
+      "placeholders": {
+        "version": {
+          "content": "$1"
+        }
+      }
+    },
+    "logExtensionLoaded": {
+      "message": "LinkedIn Message Archiver: Extension loaded"
+    },
+    "logSettingsInitialized": {
+      "message": "Extension settings initialized successfully"
+    },
+    "errorSettingsInit": {
+      "message": "Error initializing settings:"
+    },
+    "errorUpdateHandling": {
+      "message": "Error handling extension update:"
+    },
+    "notificationWelcome": {
+      "message": "Extension installed successfully. Ready to archive LinkedIn messages!"
+    },
+    "warnNotificationPermission": {
+      "message": "Notification permission not granted"
+    },
+    "errorNotificationCreate": {
+      "message": "Error creating notification:"
+    },
+    "errorNotificationHandler": {
+      "message": "Error handling notification request"
+    },
+    "warnUnhandledMessage": {
+      "message": "Unhandled message action: $ACTION$",
+      "placeholders": {
+        "action": {
+          "content": "$1"
+        }
+      }
+    },
+    "errorUnknownAction": {
+      "message": "Unknown action"
+    },
+    "errorGlobalHandler": {
+      "message": "Global error handler:"
+    },
+    "errorElementTimeout": {
+      "message": "Timeout waiting for element: $SELECTOR$",
+      "placeholders": {
+        "selector": {
+          "content": "$1"
+        }
+      }
+    },
+    "errorSelectingMessage": {
+      "message": "Error selecting message:"
+    },
+    "errorArchiveButton": {
+      "message": "Archive button not found"
+    },
+    "errorArchiveProcess": {
+      "message": "Error in archive process:"
+    },
+    "errorGeneric": {
+      "message": "Error: $ERROR$",
+      "placeholders": {
+        "error": {
+          "content": "$1"
+        }
+      }
+    },
+    "startingProcess": {
+      "message": "Starting archive process..."
+    },
+    "processPaused": {
+      "message": "Process paused"
+    },
+    "processResumed": {
+      "message": "Process resumed"
+    },
+    "processStopped": {
+      "message": "Process stopped"
+    }
+  }

@@ -1,0 +1,98 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extensionName__",
+  "version": "1.0.0",
+  "version_name": "1.0.0 Beta",
+  "description": "__MSG_appDescription__",
+  "default_locale": "en",
+  "author": "Ronny M. Escalona",
+  "homepage_url": "https://www.linkedin.com/in/r-escalona-software-developer/",
+  
+  "icons": {
+    "16": "assets/icons/icon16.png",
+    "48": "assets/icons/icon48.png",
+    "128": "assets/icons/icon128.png"
+  },
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/icons/icon16.png",
+      "48": "assets/icons/icon48.png",
+      "128": "assets/icons/icon128.png"
+    },
+    "default_title": "__MSG_browserActionTitle__"
+  },
+
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+
+  "optional_permissions": [
+    "notifications"
+  ],
+
+  "host_permissions": [
+    "https://www.linkedin.com/messaging/*"
+  ],
+
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/messaging/*"],
+      "js": [
+        "libs/i18n.js",
+        "content.js"
+      ],
+      "css": ["assets/styles/content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/icons/*.png",
+        "assets/styles/*.css"
+      ],
+      "matches": ["https://www.linkedin.com/*"],
+      "use_dynamic_url": false
+    }
+  ],
+
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;"
+  },
+
+  "minimum_chrome_version": "88",
+
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+L",
+        "mac": "Command+Shift+L",
+        "linux": "Ctrl+Shift+L",
+        "windows": "Ctrl+Shift+L"
+      },
+      "description": "__MSG_commandOpenPopup__"
+    }
+  },
+
+  "offline_enabled": false,
+
+  "incognito": "spanning",
+
+  "short_name": "__MSG_extensionShortName__",
+  
+  "key_features": [
+    "Automatic message archiving",
+    "Batch processing",
+    "Pause/Resume functionality",
+    "Progress tracking"
+  ]
+}

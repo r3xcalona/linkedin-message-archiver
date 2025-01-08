@@ -1,0 +1,195 @@
+{
+  "extensionName": {
+    "message": "Archivador de Mensajes LinkedIn",
+    "description": "El nombre de la extensión"
+  },
+  "extensionShortName": {
+    "message": "Archivador LI",
+    "description": "Nombre corto de la extensión"
+  },
+  "appDescription": {
+    "message": "Archiva mensajes de LinkedIn automáticamente de forma sencilla",
+    "description": "La descripción de la extensión"
+  },
+  "browserActionTitle": {
+    "message": "Archivador de Mensajes LinkedIn",
+    "description": "El título del botón de acción del navegador"
+  },
+  "commandOpenPopup": {
+    "message": "Abrir Archivador de Mensajes",
+    "description": "Descripción del atajo de teclado para abrir el popup"
+  },
+  "startButton": {
+    "message": "Archivar Todos los Mensajes"
+  },
+  "settingsButton": {
+    "message": "Configuración"
+  },
+  "pauseButton": {
+    "message": "Pausar"
+  },
+  "resumeButton": {
+    "message": "Continuar"
+  },
+  "stopButton": {
+    "message": "Detener"
+  },
+  "messagesCount": {
+    "message": "mensajes"
+  },
+  "notifications": {
+    "message": "Mostrar notificaciones"
+  },
+  "messageDelay": {
+    "message": "Retraso entre mensajes (ms):"
+  },
+  "language": {
+    "message": "Idioma:"
+  },
+  "errorLinkedIn": {
+    "message": "Por favor, navega a la página de mensajes de LinkedIn primero"
+  },
+  "noMessages": {
+    "message": "No se encontraron mensajes para archivar"
+  },
+  "processingStopped": {
+    "message": "Proceso detenido por el usuario"
+  },
+  "archiveSuccess": {
+    "message": "¡$COUNT$ mensajes archivados exitosamente!",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "searchingArchiveButton": {
+    "message": "Buscando botón de archivo..."
+  },
+  "loadingMessages": {
+    "message": "Cargando todos los mensajes..."
+  },
+  "scrollCompleted": {
+    "message": "Scroll completado"
+  },
+  "startingSelection": {
+    "message": "Iniciando selección de mensajes... (Intento $ATTEMPT$)",
+    "placeholders": {
+      "attempt": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "messageSelected": {
+    "message": "Mensaje $COUNT$ seleccionado",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "warningIncomplete": {
+    "message": " (Advertencia: No se pudieron seleccionar todos los mensajes)"
+  },
+  "archiveButtonFound": {
+    "message": "Botón de archivo encontrado, procediendo a archivar..."
+  },
+  "retryingSelection": {
+    "message": "$COUNT$ mensajes sin seleccionar. Reintentando...",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "logInstallSuccess": {
+    "message": "Archivador de Mensajes LinkedIn: Extensión instalada exitosamente"
+  },
+  "logUpdateSuccess": {
+    "message": "Archivador de Mensajes LinkedIn: Actualizado desde la versión $VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "logExtensionLoaded": {
+    "message": "Archivador de Mensajes LinkedIn: Extensión cargada"
+  },
+  "logSettingsInitialized": {
+    "message": "Configuración de la extensión inicializada exitosamente"
+  },
+  "errorSettingsInit": {
+    "message": "Error al inicializar la configuración:"
+  },
+  "errorUpdateHandling": {
+    "message": "Error al manejar la actualización de la extensión:"
+  },
+  "notificationWelcome": {
+    "message": "¡Extensión instalada exitosamente! Lista para archivar mensajes de LinkedIn."
+  },
+  "warnNotificationPermission": {
+    "message": "Permiso de notificaciones no concedido"
+  },
+  "errorNotificationCreate": {
+    "message": "Error al crear notificación:"
+  },
+  "errorNotificationHandler": {
+    "message": "Error al manejar solicitud de notificación"
+  },
+  "warnUnhandledMessage": {
+    "message": "Acción de mensaje no manejada: $ACTION$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorUnknownAction": {
+    "message": "Acción desconocida"
+  },
+  "errorGlobalHandler": {
+    "message": "Manejador de errores global:"
+  },
+  "errorElementTimeout": {
+    "message": "Tiempo de espera agotado esperando el elemento: $SELECTOR$",
+    "placeholders": {
+      "selector": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorSelectingMessage": {
+    "message": "Error al seleccionar mensaje:"
+  },
+  "errorArchiveButton": {
+    "message": "No se encontró el botón de archivo"
+  },
+  "errorArchiveProcess": {
+    "message": "Error en el proceso de archivo:"
+  },
+  "errorGeneric": {
+    "message": "Error: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "startingProcess": {
+    "message": "Iniciando proceso de archivo..."
+  },
+  "processPaused": {
+    "message": "Proceso pausado"
+  },
+  "processResumed": {
+    "message": "Proceso reanudado"
+  },
+  "processStopped": {
+    "message": "Proceso detenido"
+  }
+}

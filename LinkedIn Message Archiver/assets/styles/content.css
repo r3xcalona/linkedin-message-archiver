@@ -1,0 +1,66 @@
+/* Content script styles for LinkedIn Message Archiver */
+:root {
+    --li-primary: #0a66c2;
+    --li-hover: #004182;
+    --li-background: #ffffff;
+    --li-text: #000000;
+  }
+  
+  /* Selection highlight */
+  .lma-selected {
+    background-color: rgba(10, 102, 194, 0.1);
+  }
+  
+  /* Status indicators */
+  .lma-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--li-primary);
+    z-index: 9999;
+    transition: width 0.3s ease;
+  }
+  
+  /* Custom checkbox styles */
+  .lma-checkbox {
+    border-color: var(--li-primary);
+  }
+  
+  .lma-checkbox:checked {
+    background-color: var(--li-primary);
+  }
+  
+  /* Processing state */
+  .lma-processing {
+    opacity: 0.7;
+    pointer-events: none;
+  }
+  
+  /* Status messages */
+  .lma-status {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: var(--li-background);
+    color: var(--li-text);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Dark mode support */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --li-background: #1d2226;
+      --li-text: #ffffff;
+    }
+  }

@@ -1,0 +1,107 @@
+/* Theme System Utilities */
+.theme-toggle {
+    position: fixed;
+    bottom: var(--spacing-unit);
+    right: var(--spacing-unit);
+    padding: calc(var(--spacing-unit) * 0.5);
+    border-radius: 50%;
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.2s ease;
+  }
+  
+  .theme-toggle:hover {
+    box-shadow: var(--shadow-md);
+  }
+  
+  .theme-toggle:focus {
+    outline: none;
+    box-shadow: var(--focus-ring);
+  }
+  
+  /* Status Styles */
+  .status-info {
+    background-color: var(--info-background);
+    color: var(--info-text);
+    border: 1px solid var(--info-text);
+  }
+  
+  .status-warning {
+    background-color: var(--warning-background);
+    color: var(--warning-text);
+    border: 1px solid var(--warning-text);
+  }
+  
+  .status-error {
+    background-color: var(--error-background);
+    color: var(--error-text);
+    border: 1px solid var(--error-text);
+  }
+  
+  .status-success {
+    background-color: var(--success-background);
+    color: var(--success-text);
+    border: 1px solid var(--success-text);
+  }
+  
+  /* Interactive States */
+  .btn:focus-visible {
+    outline: none;
+    box-shadow: var(--focus-ring);
+  }
+  
+  .btn-warning:focus-visible {
+    box-shadow: var(--focus-ring-warning);
+  }
+  
+  .btn-danger:focus-visible {
+    box-shadow: var(--focus-ring-error);
+  }
+  
+  /* Loading States */
+  .loading {
+    position: relative;
+    pointer-events: none;
+  }
+  
+  .loading::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      var(--background-color),
+      transparent
+    );
+    animation: loading 1.5s infinite;
+  }
+  
+  @keyframes loading {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  /* High Contrast Support */
+  @media (forced-colors: active) {
+    .btn {
+      border: 2px solid ButtonText;
+    }
+    
+    .btn:disabled {
+      border-color: GrayText;
+    }
+  
+    .status {
+      border: 1px solid CurrentColor;
+    }
+  }

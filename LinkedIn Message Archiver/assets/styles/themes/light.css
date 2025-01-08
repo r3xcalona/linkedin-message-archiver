@@ -1,0 +1,52 @@
+:root {
+    /* Brand Colors */
+    --primary-color: #0a66c2;
+    --primary-hover: #004182;
+    --primary-active: #003267;
+    --primary-light: #e7f1f9;
+  
+    /* Action Colors */
+    --warning-color: #f59e0b;
+    --warning-hover: #d97706;
+    --warning-active: #b45309;
+    --danger-color: #dc2626;
+    --danger-hover: #b91c1c;
+    --danger-active: #991b1b;
+    --success-color: #059669;
+    --success-hover: #047857;
+  
+    /* UI Colors */
+    --background-color: #ffffff;
+    --secondary-background: #f5f5f5;
+    --tertiary-background: #eef3f8;
+    --surface-color: #ffffff;
+    --border-color: #e5e7eb;
+    --disabled-color: #d1d5db;
+  
+    /* Text Colors */
+    --text-primary: #1f2937;
+    --text-secondary: #4b5563;
+    --text-tertiary: #6b7280;
+    --text-disabled: #9ca3af;
+    --text-inverse: #ffffff;
+  
+    /* Status Colors */
+    --info-background: #e7f1f9;
+    --info-text: #0a66c2;
+    --warning-background: #fef3c7;
+    --warning-text: #d97706;
+    --error-background: #fee2e2;
+    --error-text: #dc2626;
+    --success-background: #d1fae5;
+    --success-text: #059669;
+  
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  
+    /* Focus Rings */
+    --focus-ring: 0 0 0 3px rgba(10, 102, 194, 0.3);
+    --focus-ring-error: 0 0 0 3px rgba(220, 38, 38, 0.3);
+    --focus-ring-warning: 0 0 0 3px rgba(245, 158, 11, 0.3);
+  }
